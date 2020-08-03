@@ -418,6 +418,9 @@
     <ClInclude Include="AbstractedAccess.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="SDL2_image\.gitignore">
@@ -497,5 +500,15 @@
     <Library Include="SDL2_mixer\lib\x86\SDL2_mixer.lib">
       <Filter>Resource Files\SDL2_mixer\lib</Filter>
     </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Toby.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Toby.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
   </ItemGroup>
 </Project>

@@ -256,8 +256,6 @@ namespace SDLG
 				if (e.motion.windowID != gameWindowID) break;
 				mouseX = e.motion.x;
 				mouseY = e.motion.y;
-
-				printf("Actual:        %i, %i\n", mouseX, mouseY);
 				break;
 
 			case SDL_MOUSEBUTTONDOWN:

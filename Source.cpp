@@ -266,11 +266,12 @@ void SDLG::OnFrame() {
 
 	tobyFaceFrame.absoluteOffset = { 0, 0 };
 
-	if (InBounds(ToRect(GetFrameRect(&tobyFaceFrame)), mouseX, mouseY)) {
+	if (InBounds(ToRect(GetFrameRect(&tobyFaceFrame)), mouseX, mouseY) || tobyHeld) {
 		directionX = 0;
 		directionY = 0;
 	}
-	else if(InBounds(ToRect(GetFrameRect(&tobyFrame)),mouseX,mouseY)) {
+
+	if(InBounds(ToRect(GetFrameRect(&tobyFrame)),mouseX,mouseY)) {
 		if (buttonPressed(SDL_BUTTON_LEFT)) {
 			windowDragOffsetX = mouseX;
 			windowDragOffsetY = mouseY;

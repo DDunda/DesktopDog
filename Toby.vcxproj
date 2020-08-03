@@ -519,6 +519,7 @@
   <ItemGroup>
     <ClInclude Include="AbstractedAccess.h" />
     <ClInclude Include="Generic.h" />
+    <ClInclude Include="resource.h" />
     <ClInclude Include="SDL2\include\begin_code.h">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
@@ -1544,6 +1545,12 @@
     <Library Include="SDL2_image\lib\x86\SDL2_image.lib" />
     <Library Include="SDL2_mixer\lib\x64\SDL2_mixer.lib" />
     <Library Include="SDL2_mixer\lib\x86\SDL2_mixer.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Toby.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Toby.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
