@@ -518,6 +518,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AbstractedAccess.h" />
+    <ClInclude Include="bark.h" />
     <ClInclude Include="Generic.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="SDL2\include\begin_code.h">

@@ -14,9 +14,19 @@
 #include <vector>
 #endif
 
+#ifndef SOUND_FREQUENCY
+#define SOUND_FREQUENCY (44100.0)
+#endif
+
+#ifndef SOUND_BUFFER_SIZE
+#define SOUND_BUFFER_SIZE 1000
+#endif // !SOUND_BUFFER_SIZE
+
+
 // SDL-GAME
 namespace SDLG
 {
+	float soundBuffer[SOUND_BUFFER_SIZE];
 
 	typedef Uint32 millitime;
 
@@ -318,6 +328,7 @@ namespace SDLG
 	}
 #endif // !INPUT_HANDLED
 
+	void AudioCallback(void* userdata, Uint8* stream, int len);
 
 	static void CleanupSDL() {
 		if (gameWindow != nullptr) SDL_DestroyWindow(gameWindow);
@@ -353,6 +364,18 @@ namespace SDLG
 #endif // !ERROR_LOGGING
 			CleanupSDL();
 			return 3;
+		}
+
+		SDL_AudioSpec config;
+		config.freq = (int)SOUND_FREQUENCY;
+		config.format = AUDIO_F32;
+		config.channels = 1;
+		config.callback = AudioCallback;
+		config.samples = SOUND_BUFFER_SIZE;
+
+		if (SDL_OpenAudio(&config, NULL) < 0) {
+			fprintf(stderr, "Couldn't open audio: %s\n", SDL_GetError());
+			exit(-1);
 		}
 
 		gameWindowID = SDL_GetWindowID(gameWindow);

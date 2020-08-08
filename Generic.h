@@ -31,7 +31,14 @@ struct frame {
 	frame* parent = NULL;
 };
 
+struct paletteImage {
+	int w, h;
+	Uint8* data;
+	SDL_Palette* palette = NULL;
+};
+
 struct sprite {
-	SDL_Rect src;
-	SDL_Texture** texture;
+	paletteImage* source;
+	frame* frm;
+	SDL_Texture* txt = NULL;
 };
