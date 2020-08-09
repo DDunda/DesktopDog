@@ -151,9 +151,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="SDLG.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="SDL2\include\begin_code.h">
       <Filter>Resource Files\SDL2\include</Filter>
     </ClInclude>
@@ -421,7 +418,10 @@
     <ClInclude Include="resource.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="bark.h">
+    <ClInclude Include="bark.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SDLG.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -8,7 +8,7 @@
 #include "AbstractedAccess.h"
 #include "Generic.h"
 
-#include "bark.h"
+#include "bark.hpp"
 
 using namespace SDLG;
 
