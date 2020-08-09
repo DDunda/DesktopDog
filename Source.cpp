@@ -310,7 +310,7 @@ signed short* barkStart = barkAudioData;
 signed short* barkEnd = barkAudioData + 13440;
 signed short* barkIter = barkStart;
 
-float faceRadius = 5 * SCALING_FACTOR;
+float faceRadius = 4 * SCALING_FACTOR;
 
 void Bark() {
 	if (!barking) {
@@ -405,7 +405,7 @@ void SDLG::OnFrame() {
 	}
 
 	SDL_FRect tobyRect = GetFrameRect(&bodyFrame);
-	SDL_FPoint center = GetPointInRect(tobyRect, 5.0 / 20.0, 6.5 / 19.0);
+	SDL_FPoint center = GetPointInRect(tobyRect, 6.0 / 20.0, 6.5 / 19.0);
 
 	float offsetX = mouseX - center.x;
 	float offsetY = mouseY - center.y;
