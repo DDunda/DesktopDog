@@ -172,10 +172,10 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="AbstractedAccess.cpp" />
-    <ClCompile Include="Generic.cpp" />
-    <ClCompile Include="Image.cpp" />
-    <ClCompile Include="Source.cpp" />
+    <ClCompile Include="abstracted access.cpp" />
+    <ClCompile Include="generic.cpp" />
+    <ClCompile Include="image.cpp" />
+    <ClCompile Include="source.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="abstracted access.h" />
@@ -184,7 +184,7 @@
     <ClInclude Include="image.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="sdlg.h" />
-    <ClInclude Include="spriteData.h" />
+    <ClInclude Include="sprite data.h" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="Dog.ico" />

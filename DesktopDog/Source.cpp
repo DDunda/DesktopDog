@@ -4,11 +4,10 @@
 
 #include "abstracted access.h"
 #include "generic.h"
-
 #include "image.h"
 
 #include "bark.hpp"
-#include "spriteData.h"
+#include "sprite data.h"
 
 using namespace SDLG;
 

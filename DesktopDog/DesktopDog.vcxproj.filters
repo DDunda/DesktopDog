@@ -15,16 +15,16 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Source.cpp">
+    <ClCompile Include="source.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="AbstractedAccess.cpp">
+    <ClCompile Include="abstracted access.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Image.cpp">
+    <ClCompile Include="image.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Generic.cpp">
+    <ClCompile Include="generic.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -47,7 +47,7 @@
     <ClInclude Include="image.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="spriteData.h">
+    <ClInclude Include="sprite data.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
