@@ -1,7 +1,7 @@
 #pragma once
 
 #include <SDL.h>
-#include "AbstractedAccess.h"
+#include "abstracted access.h"
 #include "SDLG.h"
 
 bool InBounds(SDL_Rect bounds, int x, int y);

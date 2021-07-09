@@ -29,10 +29,10 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Generic.h">
+    <ClInclude Include="generic.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="AbstractedAccess.h">
+    <ClInclude Include="abstracted access.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="resource.h">
@@ -41,10 +41,10 @@
     <ClInclude Include="bark.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="SDLG.h">
+    <ClInclude Include="sdlg.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Image.h">
+    <ClInclude Include="image.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="spriteData.h">

@@ -1,14 +1,13 @@
 #include <SDL.h>
 
-#include "SDLG.h"
+#include "sdlg.h"
 
-#include "AbstractedAccess.h"
-#include "Generic.h"
+#include "abstracted access.h"
+#include "generic.h"
+
+#include "image.h"
 
 #include "bark.hpp"
-
-#include "Image.h"
-
 #include "spriteData.h"
 
 using namespace SDLG;

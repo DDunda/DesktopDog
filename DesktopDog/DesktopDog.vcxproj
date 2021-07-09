@@ -22,7 +22,7 @@
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
     <ProjectGuid>{3349cb25-6a1b-4a36-b9d2-ba3112d450cd}</ProjectGuid>
-    <RootNamespace>Dog</RootNamespace>
+    <RootNamespace>DesktopDog</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -178,12 +178,12 @@
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="AbstractedAccess.h" />
+    <ClInclude Include="abstracted access.h" />
     <ClInclude Include="bark.hpp" />
-    <ClInclude Include="Generic.h" />
-    <ClInclude Include="Image.h" />
+    <ClInclude Include="generic.h" />
+    <ClInclude Include="image.h" />
     <ClInclude Include="resource.h" />
-    <ClInclude Include="SDLG.h" />
+    <ClInclude Include="sdlg.h" />
     <ClInclude Include="spriteData.h" />
   </ItemGroup>
   <ItemGroup>
