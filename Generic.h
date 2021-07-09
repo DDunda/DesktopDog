@@ -2,19 +2,12 @@
 
 #include <SDL.h>
 #include "AbstractedAccess.h"
+#include "SDLG.h"
 
-static constexpr bool InBounds(SDL_Rect bounds, int x, int y) {
-	return
-		x >= bounds.x &&
-		x < bounds.x + bounds.w &&
-		y >= bounds.y &&
-		y < bounds.y + bounds.h;
-}
-static constexpr bool InBounds(SDL_Rect bounds, SDL_Point coord) { return InBounds(bounds, coord.x, coord.y); }
+bool InBounds(SDL_Rect bounds, int x, int y);
+bool InBounds(SDL_Rect bounds, SDL_Point coord);
 
-SDL_Rect ToRect(SDL_FRect rect) {
-	return { (int)rect.x, (int)rect.y, (int)rect.w, (int)rect.h };
-}
+SDL_Rect ToRect(SDL_FRect rect);
 
 template <class T>
 using ep = EasyPointer<T>;
@@ -31,14 +24,6 @@ struct frame {
 	frame* parent = NULL;
 };
 
-struct paletteImage {
-	int w, h;
-	Uint8* data;
-	SDL_Palette* palette = NULL;
-};
+SDL_FPoint GetPointInRect(SDL_FRect rect, float x, float y);
 
-struct sprite {
-	paletteImage* source;
-	frame* frm;
-	SDL_Texture* txt = NULL;
-};
+SDL_FRect GetFrameRect(frame f);

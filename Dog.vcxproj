@@ -22,7 +22,7 @@
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
     <ProjectGuid>{3349cb25-6a1b-4a36-b9d2-ba3112d450cd}</ProjectGuid>
-    <RootNamespace>Toby</RootNamespace>
+    <RootNamespace>Dog</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -141,9 +141,10 @@
       <WarningLevel>Level3</WarningLevel>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <SDLCheck>true</SDLCheck>
+      <SDLCheck>false</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -514,12 +515,15 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AbstractedAccess.cpp" />
+    <ClCompile Include="Generic.cpp" />
+    <ClCompile Include="Image.cpp" />
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AbstractedAccess.h" />
     <ClInclude Include="bark.hpp" />
     <ClInclude Include="Generic.h" />
+    <ClInclude Include="Image.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="SDL2\include\begin_code.h">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
@@ -1382,6 +1386,7 @@
       <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</DeploymentContent>
     </ClInclude>
     <ClInclude Include="SDLG.h" />
+    <ClInclude Include="spriteData.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="SDL2\.gitignore">
@@ -1548,10 +1553,10 @@
     <Library Include="SDL2_mixer\lib\x86\SDL2_mixer.lib" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="Toby.ico" />
+    <Image Include="Dog.ico" />
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="Toby.rc" />
+    <ResourceCompile Include="Dog.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

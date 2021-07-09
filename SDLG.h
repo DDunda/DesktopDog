@@ -1,8 +1,15 @@
 #pragma once
 
+#ifndef SDLG_H
+#define SDLG_H
+
 #include <SDL.h>
 #include <SDL_image.h>
 #include "Generic.h"
+
+#define SCALING_FACTOR (4)
+//#define ERROR_LOGGING
+#define SOUND_FREQUENCY (44100.0)
 
 #ifdef ERROR_LOGGING
 #include <string>
@@ -14,10 +21,6 @@
 #include <vector>
 #endif
 
-#ifndef SOUND_FREQUENCY
-#define SOUND_FREQUENCY (44100.0)
-#endif
-
 #ifndef SOUND_BUFFER_SIZE
 #define SOUND_BUFFER_SIZE 1000
 #endif // !SOUND_BUFFER_SIZE
@@ -26,7 +29,7 @@
 // SDL-GAME
 namespace SDLG
 {
-	float soundBuffer[SOUND_BUFFER_SIZE];
+	static float soundBuffer[SOUND_BUFFER_SIZE];
 
 	typedef Uint32 millitime;
 
@@ -407,3 +410,4 @@ namespace SDLG
 	}
 
 }
+#endif // !SDLG_H
